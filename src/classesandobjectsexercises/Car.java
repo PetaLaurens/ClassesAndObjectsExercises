@@ -13,10 +13,19 @@ public class Car {
     String model;
     int numWheels;
     String colour;
+
+    public Car(String make, String model, int numWheels, String colour) {
+        this.make = make;
+        this.model = model;
+        this.numWheels = numWheels;
+        this.colour = colour;
+    }
+    
+    
     
     public void drive(double direction) {
-        System.out.println(String.format("The %s %s is driving at %f degrees", colour, make, direction));
-        System.out.printf("The %s %s is driving at %f degrees", colour, make, direction);
+        System.out.println(String.format("The %s %s is driving at %.0f degrees", colour, make, direction));
+        System.out.printf("The %s %s is driving at %.0f degrees", colour, make, direction);
     }
 }
 
